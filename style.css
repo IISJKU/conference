@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Proxima Nova Lt', sans-serif;
+    font-size: 12px;
+    color: #111826;
+}
+
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
@@ -9,6 +18,59 @@
 }
 @media (max-width: 576px) {
 
+}
+
+form{
+    padding: 3rem;
+}
+
+.form-group{
+    margin-bottom: 0;
+}
+
+.col-{
+    padding: 0;
+}
+
+#maincontent{
+    padding: 2rem;
+}
+
+hr{
+    border-top: 1px solid #9EB1BA;
+}
+
+a{
+    color: #304963;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+fieldset{
+    border: 1px solid #9EB1BA;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.form-row{
+    padding: 0px 10px;
+}
+
+legend{
+    float: left;
+    margin: 0;
+    padding: 5px 15px;
+    background-color: #F8F9FA;
+    border-bottom: 1px solid #CCDCE6;
+}
+
+a:hover{
+    color: slategrey;
+}
+
+
+.display-4 {
+    font-size: 6.0vh;
 }
 
 .skiplink{
@@ -23,6 +85,11 @@
     transition: opacity ease-out 0.7s;
 }
 
+.bg-image{
+    height: 32rem;
+    background: #111826;
+}
+
 .overlay-image{
     position: absolute;
     bottom: 0;
@@ -35,23 +102,79 @@
 }
 
 
-
 .carousel-caption{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-bottom: 100px;
-    padding-left: 200px;
     text-align: left;
+    bottom: 50px;
+}
+
+.carousel-caption h1{
+    text-shadow: 2px 2px 10px #111826;
+    font-size: 5vw;
+    font-weight: lighter;
+}
+
+.carousel-caption h5{
+    font-size: 300%;
+    text-shadow: 2px 2px 10px #111826;
+}
+
+.carousel-caption p{
+    font-size: 200%;
+    text-shadow: 1px 1px 10px #111826;
 }
 
 .nav-item {
-    font-size: 20px;
-    padding: 20px;
+    font-size: 1.8rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #111826;
 }
 
 .nav-link{
+    padding: 0 5px 0 5px;
+}
+
+.nav-item:hover{
+    color: #A4B8C1;
+}
+
+.btn{
+    background-color: #F8F9FA;
     color: #111826;
+}
+
+.btn:hover{
+    background-color: #304963;
+}
+
+.dropdown-menu{
+    background-color: rgba(248, 249, 250, 0.8);
+    border: 0px;
+    border-radius: 0;
+    padding: 0;
+    margin: 1.3rem;
+}
+
+
+.dropdown-divider{
+    margin: 0 ;
+}
+
+.dropdown-item{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(10, 30, 55, 0.4);
+}
+
+.nav-link{
+    size: 1.3em !important;
+    color: #111826;
+    text-decoration: none;
+    font-weight: normal;
 }
 .nav-link:hover{
     color: slategrey;
@@ -73,7 +196,7 @@ figure {
     height: 100%;
 }
 #fixed {
-    background-image: url('img/mac.png');
+
     position: fixed;
     display: block;
     top: 0;

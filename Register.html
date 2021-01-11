@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Icchp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+</head>
+<body>
+
+<a href="#maincontent" class="skiplink">Go to main content</a>
+
+<!-- Navigation -->
+
+<nav role="navigation" class="navbar navbar-expand-md bg-light sticky-top justify-content-sm-start"
+     aria-label="Main Navigation">
+    <div class="container-fluid">
+
+        <div class="navbar-logo">
+            <a class="logo navbar-btn pull-left" href="index.html" alt="Home">
+                <img src="Images/Logo3.png" height="100"/>
+            </a>
+        </div>
+        <div class="d-flex justify-content-end text-nowrap">
+            <form class="order-md-1 " role="search" class="search">
+                <span class="glyphicon glyphicon-name"></span>
+                <input type="text" class="search-focus" placeholder="Search...">
+            </form>
+            <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#collapse_target"
+                    aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="sr-only">Toggle Main Navigation</span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse_target" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration
+                            <span class="caret position-absolute"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Conference Rates 2020</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Terms & Conditions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Social Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contribute</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Award</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Image Slider -->
+
+<div role="slider" id="slides" class="carousel slide carousel-fade" data-ride="carousel" aria-label="Carousel">
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="overlay-image" style="background-image: url(./Images/BGRegistrate.PNG);" alt="Image"></div>
+            <div class="carousel-caption">
+                <h1 class="display-3">
+                    Register
+                </h1>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- User Navigation -->
+
+<nav role="navigation" class="navbar navbar-expand-sm bg-light " aria-label="User Navigation">
+    <div class="container-fluid">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="loggedIn.html">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Register.html">Register</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Register Form -->
+
+<form>
+
+    <fieldset>
+        <legend>Personal Data</legend>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="first_name">*First Name</label><br>
+                <input type="text" class="form-control" id="first_name" required="" placeholder="First Name">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="surname">*Surname</label><br>
+                <input type="text" class="form-control" id="surname" required="" placeholder="Name">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="email">Email</label><br>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="birthday">*Birthday</label><br>
+                <input type="date" class="form-control" id="birthday" required="">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="homepage">Homepage</label><br>
+                <input type="url" class="form-control" id="homepage">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-2 col-lg-1">
+                <label for="gender">Gender</label>
+                <select id="gender" class="form-control">
+                    <option>Choose...</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Additional data</legend>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label class="form-label" for="picture">Picture</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" accept=".png, .jpg" id="picture">
+                    <label class="custom-file-label" for="picture">Choose file</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="profession">Profession</label> <br>
+                <select id="profession" class="form-control">
+                    <option>Teacher</option>
+                    <option>Researcher</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="arrival">Arrival time</label><br>
+                <input type="datetime-local" class="form-control" id="arrival">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label>Your favorite number</label><br>
+                <input type="range" min="1" max="50" value="10">
+            </div>
+        </div>
+
+    </fieldset>
+    <div class="form-row">
+        <div class="form-check col-md-6 ml-2">
+            <input type="checkbox" class="form-check-input" id="terms">
+            <label class="form-check-label ml-2" for="terms"> I agree to the <a href="#">Terms and Conditions</a><br></label>
+        </div>
+    </div>
+    <input type="submit" class="btn btn-outline-dark btn-lg" name="Submit">
+</form>
+
+<!-- Footer -->
+
+<footer role="contentinfo">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3>
+                    Contact
+                </h3>
+                <hr class="light">
+                <p>+43 (0) 732 2468-3750</p>
+                <p>office@icchp.at</p>
+                <p>Altenbergerstraße 69</p>
+                <p>4040 Linz Austria</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Follow Us</h3>
+                <hr class="light">
+                <a href="https://www.facebook.com/ICCHP2020/?ref=notif&notif_t=page_fan"><span
+                        class="sr-only">Facebook</span><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/ICCHP2020"><span class="sr-only">Twitter</span><i
+                        class="fab fa-twitter"></i></a>
+                <a href="http://www.linkedin.com/groups?home=&gid=7477887&trk=anet_ug_hm"><span
+                        class="sr-only">Linkedin</span><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCS6vb15hONLQ-C-Gj7NNaCQ"><span
+                        class="sr-only">Youtube</span><i class="fab fa-youtube"></i> </a>
+                <a href="https://www.instagram.com/icchp/"><span class="sr-only">Instagram</span><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <div class="col-md-4">
+                <h3>Text</h3>
+                <hr>
+                <img src="Images/unnamed.png" height="100"/></div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
