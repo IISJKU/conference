@@ -56,10 +56,15 @@ a{
 }
 
 h3{
-    font-size: 30px;
+    font-size: 3.0vh;
 }
 h4{
-    font-size: 25px;
+    font-size: 2.5vh;
+}
+
+.tab button{
+    font-size: 2.0vh !important;
+    padding: 15px 10px !important;
 }
 
 fieldset{
@@ -327,7 +332,7 @@ figure {
 /* Style the tab content */
 .tabcontent {
     float: left;
-    padding: 8px 12px;
+    padding: 10px 25px;
     border: 1px solid #9EB1BA;
     width: 80%;
     height: 1600px;
