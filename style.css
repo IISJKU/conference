@@ -24,6 +24,17 @@ form{
     padding: 3rem;
 }
 
+form[role="search"]{
+    padding: 0 !important;
+}
+
+.media-body{
+    font-family: 'Proxima Nova Lt', sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    color: #111826;
+}
+
 .form-group{
     margin-bottom: 0;
 }
@@ -32,9 +43,6 @@ form{
     padding: 0;
 }
 
-#maincontent{
-    padding: 2rem;
-}
 
 hr{
     border-top: 1px solid #9EB1BA;
@@ -55,6 +63,8 @@ a{
     text-decoration: none;
 }
 
+
+
 h3{
     font-size: 3.0vh;
 }
@@ -71,6 +81,28 @@ fieldset{
     border: 1px solid #9EB1BA;
     border-radius: 3px;
     margin-bottom: 20px;
+}
+
+
+#main1 {
+    background-color: #F8F9FA;
+    margin-top: 2.5vw;
+    padding: 2vw;
+    box-shadow: 2px 2px 10px #A4B8C1;
+    font-size: 16px;
+}
+
+#main2 {
+    background-color: #F8F9FA;
+    margin-top: 2.5vw;
+    margin-bottom: 3vw;
+    padding: 2vw;
+    box-shadow: 2px 2px 10px #A4B8C1;
+    font-size: 16px;
+}
+
+#maincontent img{
+    box-shadow: 1px 1px 8px #A4B8C1;
 }
 
 .form-row{
@@ -126,27 +158,21 @@ a:hover{
 .carousel-caption{
     position: absolute;
     text-align: left;
-    bottom: 50px;
-}
-
-.carousel-caption h1{
-    text-shadow: 2px 2px 10px #111826;
-    font-size: 5vw;
-    font-weight: lighter;
+    bottom: 60px;
 }
 
 .carousel-caption h5{
-    font-size: 300%;
+    font-size: 5vh;
     text-shadow: 2px 2px 10px #111826;
 }
 
 .carousel-caption p{
-    font-size: 200%;
+    font-size: 3vh;
     text-shadow: 1px 1px 10px #111826;
 }
 
 .nav-item {
-    font-size: 1.8rem;
+    font-size: 1.4vw;
     padding-left: 10px;
     padding-right: 10px;
     color: #111826;
