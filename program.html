@@ -24,11 +24,11 @@
 
         <div class="navbar-logo">
             <a class="logo navbar-btn pull-left" href="index.html" alt="Home">
-                <img src="Images/Logo3.png" height="100"/>
+                <img class="img-fluid" style="height: 10vh" src="Images/Logo3.png"/>
             </a>
         </div>
         <div class="d-flex justify-content-end text-nowrap">
-            <form class="order-md-1 " role="search" class="search">
+            <form class="order-md-1" role="search" class="search">
                 <span class="glyphicon glyphicon-name"></span>
                 <input type="text" class="search-focus" placeholder="Search...">
             </form>
@@ -78,7 +78,8 @@
 
 <!-- Image Slider -->
 
-<div role="slider" id="slides" class="carousel slide carousel-fade" style="height: 250px" data-ride="carousel" aria-label="Carousel">
+<div role="slider" id="slides" class="carousel slide carousel-fade" style="height: 250px" data-ride="carousel"
+     aria-label="Carousel">
 
     <!-- Slides -->
     <div class="carousel-inner" style="height: 250px">
@@ -96,456 +97,534 @@
 
 <!-- User Navigation -->
 
-<nav role="navigation" class="navbar navbar-expand-sm bg-light " aria-label="User Navigation">
-    <div class="container-fluid">
+<nav role="navigation" class="navbar navbar-expand-md bg-light"
+     aria-label="User Navigation">
+    <div class="container-fluid justify-content-end">
+        <div class="d-flex text-nowrap">
+            <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#collapse_target"
+                    aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="sr-only">Toggle Main Navigation</span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsetarget" id="navbar-SupportedContent">
 
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="loggedIn.html">Log In</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Register.html">Register</a>
-            </li>
-        </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="loggedIn.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </nav>
 
 <!-- Program -->
 
-<div role="main" class="container-fluid padding" id="maincontent" tabindex="-1">
+<div role="main" class="container-fluid padding" id="maincontentprogram" tabindex="-1">
+    <div class="row">
+        <div class="nav nav-tabs ">
+            <button class="tablinks" onclick="openDay(event, 'AllDays')" id="defaultOpen">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                     class="bi bi-card-text" viewBox="0 0 16 13">
+                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <button class="tablinks" onclick="openDay(event, 'Day1')">Day 1</button>
+            <button class="tablinks" onclick="openDay(event, 'Day2')">Day 2</button>
+            <button class="tablinks" onclick="openDay(event, 'Day3')">Day 3</button>
+        </div>
 
-    <div class="tab">
-        <button class="tablinks" onclick="openDay(event, 'AllDays')" id="defaultOpen">Program Overview</button>
-        <button class="tablinks" onclick="openDay(event, 'Day1')">Conference Day 1</button>
-        <button class="tablinks" onclick="openDay(event, 'Day2')">Conference Day 2</button>
-        <button class="tablinks" onclick="openDay(event, 'Day3')">Conference Day 3</button>
+        <div id="AllDays" class="tabcontent">
+            <h3>Conference Day 1</h3><br>
+            <h4>Session 1</h4>
+            <h4>11:00 - 12:20</h4>
+            <table class="table table-bordered table-responsive-md">
+                <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th class="table-success" scope="col">Track A</th>
+                    <th class="table-danger" scope="col">Track B</th>
+                    <th class="table-warning" scope="col">Track C</th>
+                    <th class="table-info" scope="col">Track D</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td class="table-dark">User Centred Design and User Participation in Inclusive R&D (STS)
+                        Chairs: Cordula Edler (Ludwigsburg University of Education, DE), Klaus Miesenberger (Johannes
+                        Kepler
+                        University Linz, AT), Susanne Dirks (TU Dortmund, DE), Christian Bühler (TU Dortmund, FTB
+                        Vollmarstein, DE), Peter Heumader (Institute Integriert Stuideren, Johannes Kepler University
+                        Linz,
+                        AT)
+                    </td>
+                    <td class="table-dark">Service and Care Provision in Assistive Environments
+                        Chairs: Klaus Miesenberger (Johannes Kepler University Linz, AT)
+                    </td>
+                    <td class="table-dark">How to improve interaction with a text input system (STS)
+                        Chairs: Mathieu Raynal (Université de Toulouse, IRIT Lab, ELIPSE team, FR), Georges Badr
+                        (Antonine
+                        University, LB)
+                    </td>
+                    <td class="table-dark">ICT to Support Inclusive Education - Universal Learning Design (ULD) (STS)
+                        Chairs: Marion Hersh (University of Glasgow, GB), Barbara Leporini (ISTI – CNR, IT)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:00</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:20</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:40</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">12:00</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4>Session 2</h4>
+            <h4>11:00 - 12:20</h4>
+            <table class="table table-bordered table-responsive">
+                <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th class="table-success" scope="col">Track A</th>
+                    <th class="table-danger" scope="col">Track B</th>
+                    <th class="table-warning" scope="col">Track C</th>
+                    <th class="table-info" scope="col">Track D</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td class="table-dark">User Centred Design and User Participation in Inclusive R&D (STS)
+                        Chairs: Cordula Edler (Ludwigsburg University of Education, DE), Klaus Miesenberger (Johannes
+                        Kepler
+                        University Linz, AT), Susanne Dirks (TU Dortmund, DE), Christian Bühler (TU Dortmund, FTB
+                        Vollmarstein, DE), Peter Heumader (Institute Integriert Stuideren, Johannes Kepler University
+                        Linz,
+                        AT)
+                    </td>
+                    <td class="table-dark">Service and Care Provision in Assistive Environments
+                        Chairs: Klaus Miesenberger (Johannes Kepler University Linz, AT)
+                    </td>
+                    <td class="table-dark">How to improve interaction with a text input system (STS)
+                        Chairs: Mathieu Raynal (Université de Toulouse, IRIT Lab, ELIPSE team, FR), Georges Badr
+                        (Antonine
+                        University, LB)
+                    </td>
+                    <td class="table-dark">ICT to Support Inclusive Education - Universal Learning Design (ULD) (STS)
+                        Chairs: Marion Hersh (University of Glasgow, GB), Barbara Leporini (ISTI – CNR, IT)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:00</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:20</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:40</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">12:00</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h3>Conference Day 2</h3><br>
+            <h4>Session 3</h4>
+            <h4>11:00 - 12:20</h4>
+
+        </div>
+
+        <div id="Day1" class="tabcontent">
+            <h3>Conference Day 1</h3><br>
+            <h4>Session 1</h4>
+            <h4>11:00 - 12:20</h4>
+            <table class="table table-bordered table-responsive">
+                <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th class="table-success" scope="col">Track A</th>
+                    <th class="table-danger" scope="col">Track B</th>
+                    <th class="table-warning" scope="col">Track C</th>
+                    <th class="table-info" scope="col">Track D</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td class="table-dark">User Centred Design and User Participation in Inclusive R&D (STS)
+                        Chairs: Cordula Edler (Ludwigsburg University of Education, DE), Klaus Miesenberger (Johannes
+                        Kepler
+                        University Linz, AT), Susanne Dirks (TU Dortmund, DE), Christian Bühler (TU Dortmund, FTB
+                        Vollmarstein, DE), Peter Heumader (Institute Integriert Stuideren, Johannes Kepler University
+                        Linz,
+                        AT)
+                    </td>
+                    <td class="table-dark">Service and Care Provision in Assistive Environments
+                        Chairs: Klaus Miesenberger (Johannes Kepler University Linz, AT)
+                    </td>
+                    <td class="table-dark">How to improve interaction with a text input system (STS)
+                        Chairs: Mathieu Raynal (Université de Toulouse, IRIT Lab, ELIPSE team, FR), Georges Badr
+                        (Antonine
+                        University, LB)
+                    </td>
+                    <td class="table-dark">ICT to Support Inclusive Education - Universal Learning Design (ULD) (STS)
+                        Chairs: Marion Hersh (University of Glasgow, GB), Barbara Leporini (ISTI – CNR, IT)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:00</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:20</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:40</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">12:00</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4>Session 2</h4>
+            <h4>11:00 - 12:20</h4>
+            <table class="table table-bordered table-responsive">
+                <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th class="table-success" scope="col">Track A</th>
+                    <th class="table-danger" scope="col">Track B</th>
+                    <th class="table-warning" scope="col">Track C</th>
+                    <th class="table-info" scope="col">Track D</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td class="table-dark">User Centred Design and User Participation in Inclusive R&D (STS)
+                        Chairs: Cordula Edler (Ludwigsburg University of Education, DE), Klaus Miesenberger (Johannes
+                        Kepler
+                        University Linz, AT), Susanne Dirks (TU Dortmund, DE), Christian Bühler (TU Dortmund, FTB
+                        Vollmarstein, DE), Peter Heumader (Institute Integriert Stuideren, Johannes Kepler University
+                        Linz,
+                        AT)
+                    </td>
+                    <td class="table-dark">Service and Care Provision in Assistive Environments
+                        Chairs: Klaus Miesenberger (Johannes Kepler University Linz, AT)
+                    </td>
+                    <td class="table-dark">How to improve interaction with a text input system (STS)
+                        Chairs: Mathieu Raynal (Université de Toulouse, IRIT Lab, ELIPSE team, FR), Georges Badr
+                        (Antonine
+                        University, LB)
+                    </td>
+                    <td class="table-dark">ICT to Support Inclusive Education - Universal Learning Design (ULD) (STS)
+                        Chairs: Marion Hersh (University of Glasgow, GB), Barbara Leporini (ISTI – CNR, IT)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:00</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:20</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">11:40</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">12:00</th>
+                    <td>
+                        Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
+                        Visual Impairments (Science Track Contribution)
+                    </td>
+                    <td>
+                        Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People
+                        (Science
+                        Track Contribution)
+                    </td>
+                    <td>
+                        Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track
+                        Contribution)
+                    </td>
+                    <td>
+                        Fels Deb: WebMoti (Science Track Contribution)
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Day2" class="tabcontent">
+            <h3>Conference Day 2</h3>
+        </div>
+
+        <div id="Day3" class="tabcontent">
+            <h3>Conference Day 3</h3>
+        </div>
     </div>
-
-    <div id="AllDays" class="tabcontent">
-        <h3>Conference Day 1</h3><br>
-        <h4>Session 1</h4>
-        <h4>11:00 - 12:20</h4>
-        <table class="table table-bordered table-responsive-md">
-            <thead>
-            <tr>
-                <th scope="col">Time</th>
-                <th class="table-success" scope="col">Track A</th>
-                <th class="table-danger" scope="col">Track B</th>
-                <th class="table-warning" scope="col">Track C</th>
-                <th class="table-info" scope="col">Track D</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td class="table-dark">User Centred Design and User Participation in Inclusive R&D (STS)
-                    Chairs: Cordula Edler (Ludwigsburg University of Education, DE), Klaus Miesenberger (Johannes Kepler
-                    University Linz, AT), Susanne Dirks (TU Dortmund, DE), Christian Bühler (TU Dortmund, FTB
-                    Vollmarstein, DE), Peter Heumader (Institute Integriert Stuideren, Johannes Kepler University Linz,
-                    AT)
-                </td>
-                <td class="table-dark">Service and Care Provision in Assistive Environments
-                    Chairs: Klaus Miesenberger (Johannes Kepler University Linz, AT)
-                </td>
-                <td class="table-dark">How to improve interaction with a text input system (STS)
-                    Chairs: Mathieu Raynal (Université de Toulouse, IRIT Lab, ELIPSE team, FR), Georges Badr (Antonine
-                    University, LB)
-                </td>
-                <td class="table-dark">ICT to Support Inclusive Education - Universal Learning Design (ULD) (STS)
-                    Chairs: Marion Hersh (University of Glasgow, GB), Barbara Leporini (ISTI – CNR, IT)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:00</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:20</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:40</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">12:00</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            </tbody>
-        </table><br>
-        <h4>Session 2</h4>
-        <h4>11:00 - 12:20</h4>
-        <table class="table table-bordered table-responsive">
-            <thead>
-            <tr>
-                <th scope="col">Time</th>
-                <th class="table-success" scope="col">Track A</th>
-                <th class="table-danger" scope="col">Track B</th>
-                <th class="table-warning" scope="col">Track C</th>
-                <th class="table-info" scope="col">Track D</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td class="table-dark">User Centred Design and User Participation in Inclusive R&D (STS)
-                    Chairs: Cordula Edler (Ludwigsburg University of Education, DE), Klaus Miesenberger (Johannes Kepler
-                    University Linz, AT), Susanne Dirks (TU Dortmund, DE), Christian Bühler (TU Dortmund, FTB
-                    Vollmarstein, DE), Peter Heumader (Institute Integriert Stuideren, Johannes Kepler University Linz,
-                    AT)
-                </td>
-                <td class="table-dark">Service and Care Provision in Assistive Environments
-                    Chairs: Klaus Miesenberger (Johannes Kepler University Linz, AT)
-                </td>
-                <td class="table-dark">How to improve interaction with a text input system (STS)
-                    Chairs: Mathieu Raynal (Université de Toulouse, IRIT Lab, ELIPSE team, FR), Georges Badr (Antonine
-                    University, LB)
-                </td>
-                <td class="table-dark">ICT to Support Inclusive Education - Universal Learning Design (ULD) (STS)
-                    Chairs: Marion Hersh (University of Glasgow, GB), Barbara Leporini (ISTI – CNR, IT)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:00</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:20</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:40</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">12:00</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <h3>Conference Day 2</h3><br>
-        <h4>Session 3</h4>
-        <h4>11:00 - 12:20</h4>
-
-    </div>
-
-    <div id="Day1" class="tabcontent">
-        <h3>Conference Day 1</h3><br>
-        <h4>Session 1</h4>
-        <h4>11:00 - 12:20</h4>
-        <table class="table table-bordered table-responsive">
-            <thead>
-            <tr>
-                <th scope="col">Time</th>
-                <th class="table-success" scope="col">Track A</th>
-                <th class="table-danger" scope="col">Track B</th>
-                <th class="table-warning" scope="col">Track C</th>
-                <th class="table-info" scope="col">Track D</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td class="table-dark">User Centred Design and User Participation in Inclusive R&D (STS)
-                    Chairs: Cordula Edler (Ludwigsburg University of Education, DE), Klaus Miesenberger (Johannes Kepler
-                    University Linz, AT), Susanne Dirks (TU Dortmund, DE), Christian Bühler (TU Dortmund, FTB
-                    Vollmarstein, DE), Peter Heumader (Institute Integriert Stuideren, Johannes Kepler University Linz,
-                    AT)
-                </td>
-                <td class="table-dark">Service and Care Provision in Assistive Environments
-                    Chairs: Klaus Miesenberger (Johannes Kepler University Linz, AT)
-                </td>
-                <td class="table-dark">How to improve interaction with a text input system (STS)
-                    Chairs: Mathieu Raynal (Université de Toulouse, IRIT Lab, ELIPSE team, FR), Georges Badr (Antonine
-                    University, LB)
-                </td>
-                <td class="table-dark">ICT to Support Inclusive Education - Universal Learning Design (ULD) (STS)
-                    Chairs: Marion Hersh (University of Glasgow, GB), Barbara Leporini (ISTI – CNR, IT)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:00</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:20</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:40</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">12:00</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            </tbody>
-        </table><br>
-        <h4>Session 2</h4>
-        <h4>11:00 - 12:20</h4>
-        <table class="table table-bordered table-responsive">
-            <thead>
-            <tr>
-                <th scope="col">Time</th>
-                <th class="table-success" scope="col">Track A</th>
-                <th class="table-danger" scope="col">Track B</th>
-                <th class="table-warning" scope="col">Track C</th>
-                <th class="table-info" scope="col">Track D</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td class="table-dark">User Centred Design and User Participation in Inclusive R&D (STS)
-                    Chairs: Cordula Edler (Ludwigsburg University of Education, DE), Klaus Miesenberger (Johannes Kepler
-                    University Linz, AT), Susanne Dirks (TU Dortmund, DE), Christian Bühler (TU Dortmund, FTB
-                    Vollmarstein, DE), Peter Heumader (Institute Integriert Stuideren, Johannes Kepler University Linz,
-                    AT)
-                </td>
-                <td class="table-dark">Service and Care Provision in Assistive Environments
-                    Chairs: Klaus Miesenberger (Johannes Kepler University Linz, AT)
-                </td>
-                <td class="table-dark">How to improve interaction with a text input system (STS)
-                    Chairs: Mathieu Raynal (Université de Toulouse, IRIT Lab, ELIPSE team, FR), Georges Badr (Antonine
-                    University, LB)
-                </td>
-                <td class="table-dark">ICT to Support Inclusive Education - Universal Learning Design (ULD) (STS)
-                    Chairs: Marion Hersh (University of Glasgow, GB), Barbara Leporini (ISTI – CNR, IT)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:00</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:20</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">11:40</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">12:00</th>
-                <td>
-                    Vollenwyder Beat: My Train Talks to Me: Participatory Design of a Mobile App for Travellers with
-                    Visual Impairments (Science Track Contribution)
-                </td>
-                <td>
-                    Bong Way Kiat: Designing Nostalgic Tangible User Interface Application for Elderly People (Science Track Contribution)
-                </td>
-                <td>
-                    Dobosz Krzysztof: Text Input with Foot Gestures Using the Myo Armband (Science Track Contribution)
-                </td>
-                <td>
-                    Fels Deb: WebMoti (Science Track Contribution)
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div id="Day2" class="tabcontent">
-        <h3>Conference Day 2</h3>
-    </div>
-
-    <div id="Day3" class="tabcontent">
-        <h3>Conference Day 3</h3>
-    </div>
-
 </div>
 
 <!-- Footer -->

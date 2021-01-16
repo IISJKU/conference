@@ -162,7 +162,7 @@ a:hover{
 }
 
 .carousel-caption h5{
-    font-size: 5vh;
+    font-size: 4vh;
     text-shadow: 2px 2px 10px #111826;
 }
 
@@ -172,7 +172,7 @@ a:hover{
 }
 
 .nav-item {
-    font-size: 1.4vw;
+    font-size: 2.4vh;
     padding-left: 10px;
     padding-right: 10px;
     color: #111826;
@@ -185,6 +185,7 @@ a:hover{
 .nav-item:hover{
     color: #A4B8C1;
 }
+
 
 .btn{
     background-color: #F8F9FA;
@@ -318,39 +319,39 @@ figure {
 }
 
 /* Style the tab */
-.tab {
+.nav-tabs {
     float: left;
-    border-bottom: 1px solid #9EB1BA;
+    border-right: 1px solid #9EB1BA;
     border-left: 1px solid #9EB1BA;
     border-top: 1px solid #9EB1BA;
     background-color: #304963;
-    width: 20%;
-    height: 206px;
+    width: auto;
+    height: 80px;
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.nav-tabs button {
     display: block;
     background-color: inherit;
     color: white;
     padding: 19px 16px;
-    width: 100%;
+    width: auto;
     border: none;
     outline: none;
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.nav-tabs button:hover {
     background-color: #F8F9FA;
     color: #111826;
 }
 
 /* Create an active/current "tab button" class */
-.tab button.active {
+.nav-tabs button.active {
     background-color: #F8F9FA;
     color: #111826;
 }
@@ -360,11 +361,21 @@ figure {
     float: left;
     padding: 10px 25px;
     border: 1px solid #9EB1BA;
-    width: 80%;
-    height: 1600px;
+    width: 100%;
     margin-bottom: 40px;
     font-size: 14px;
     background-color: #F8F9FA;
+}
+
+#maincontentprogram{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+thead{
+    font-size: 18px;
 }
 
 td{
@@ -374,21 +385,25 @@ td{
 .table-success{
     background-color: #A61639;
     color: white;
+    text-shadow: 1px 1px 5px #3b0b0c;
 }
 .table-danger{
-    background-color: #E59A34;
-    color: white;
-}
-.table-warning{
     background-color: #268B8F;
     color: white;
+    text-shadow: 1px 1px 5px #0a232d;
+}
+.table-warning{
+    background-color: #CC6D13;
+    color: white;
+    text-shadow: 1px 1px 5px #741915;
 }
 .table-info{
     background-color: #524972;
     color: white;
+    text-shadow: 1px 1px 5px #1a1630;
 }
 .table-dark{
-    background-color: #111826;
+    background-color: #304963;
 }
 
 
