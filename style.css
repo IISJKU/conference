@@ -26,17 +26,43 @@ html, body {
 
 .card-img-overlay{
     color: white;
-    background: rgba(10, 35, 45, 0.7);
     margin-bottom: 215px;
     text-shadow: 1px 1px 5px #111826;
 }
 
 .card{
     margin: 20px;
-    border-color: #A4B8C1;
+    border-color: #576970;
     border-radius: .4rem;
 }
 
+.card-title{
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+.card-body .card-title{
+    font-size: 16px;
+}
+
+.card-text{
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 1.1;
+}
+
+.bottom-align-text{
+    position: absolute;
+    bottom: -15px;
+}
+
+.crop-text-2 {
+    -webkit-line-clamp: 4;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
 
 hr{
     border-top: 1px solid #9EB1BA;
@@ -216,7 +242,7 @@ fieldset{
     color: white;
 }
 
-.btn-primary {background-image: linear-gradient(to right, rgba(149, 13, 0, 0.89) 0%, rgba(191, 16, 23, 0.68) 51%, rgba(46, 1, 0, 0.83) 100%)}
+.btn-primary {background-image: linear-gradient(to right, rgba(0, 149, 0, 0.89) 0%, rgba(0, 191, 18, 0.68) 51%, rgba(0, 46, 10, 0.83) 100%)}
 .btn-primary {
     margin: 10px;
     padding: 5px 10px;
@@ -226,7 +252,8 @@ fieldset{
     color: white !important;
     border: none;
     font-weight: bold;
-    text-shadow: 1px 1px 7px #9b2d00;
+    text-shadow: 1px 1px 7px #005329;
+    width: 80px;
 }
 
 .btn-primary:hover {
@@ -247,6 +274,7 @@ fieldset{
     border: none;
     font-weight: bold;
     text-shadow: 1px 1px 7px #074973;
+    width: 80px;
 }
 
 .btn-success:hover {
@@ -266,6 +294,7 @@ fieldset{
     border: none;
     font-weight: bold;
     text-shadow: 1px 1px 7px #9b2d00;
+    width: 80px;
 }
 
 .btn-danger:hover {
@@ -286,6 +315,7 @@ fieldset{
     border: none;
     font-weight: bold;
     text-shadow: 1px 1px 7px #9b2d00;
+    width: 80px;
 }
 
 .btn-warning:hover {
@@ -295,19 +325,21 @@ fieldset{
 }
 
 
-.btn-light {background-image: linear-gradient(to right, #323b4f 0%, #3f4c67 51%, #9eb1ba 100%)}
+.btn-light {background-image: linear-gradient(to right, #dce4ea 0%, #f0f0f0 51%, #9eb1ba 100%)}
 .btn-light {
-    margin: 10px;
-    padding: 5px 20px;
+    margin: 9px;
+    padding: 4px 10px;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.2s;
     background-size: 200% auto;
-    color: #fff !important;
+    color: #111826 !important;
     font-weight: bold;
+    border: 1px solid #9EB1BA;
+    width: 80px;
 }
 
 .btn-light:hover {
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
     background-image: linear-gradient(to right, rgba(49, 100, 133, 0.75) 0%, rgba(106, 153, 195, 0.85) 51%, #9eb1ba 100%);
 }

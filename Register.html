@@ -113,18 +113,36 @@
 
 <!-- Register Form -->
 
-<form>
+    <div class="row d-flex ml-5 mt-4">
+        <div class="alert alert-danger collapse" id="alertMsg" style="width: 50%" role="alert">
+            <strong>First</strong> Name is required.<br>
+            <strong>Surname</strong> is required. <br>
+            <strong>Birthday</strong> is required. <br>
+        </div>
+    </div>
+
+
+<form class="needs-validation" novalidate>
 
     <fieldset>
         <legend>Personal Data</legend>
         <div class="form-row">
             <div class="form-group col-md-3">
                 <label for="first_name">*First Name</label><br>
-                <input type="text" class="form-control" id="first_name" required="" placeholder="First Name">
+                <input type="text" class="form-control" id="first_name" placeholder="First Name" required>
+                <div class="invalid-feedback">
+                    Please enter your name.
+                </div>
+                <div class="valid-feedback">
+                    Positive feedback message!
+                </div>
             </div>
             <div class="form-group col-md-3">
                 <label for="surname">*Surname</label><br>
                 <input type="text" class="form-control" id="surname" required="" placeholder="Name">
+                <div class="invalid-feedback">
+                    Please enter your surname.
+                </div>
             </div>
         </div>
         <div class="form-row">
@@ -135,6 +153,9 @@
             <div class="form-group col-md-3">
                 <label for="birthday">*Birthday</label><br>
                 <input type="date" class="form-control" id="birthday" required="">
+                <div class="invalid-feedback">
+                    Please enter your birthday.
+                </div>
             </div>
         </div>
         <div class="form-row">
@@ -192,12 +213,22 @@
     </fieldset>
     <div class="form-row">
         <div class="form-check col-md-6 ml-2">
-            <input type="checkbox" class="form-check-input" id="terms">
-            <label class="form-check-label ml-2" for="terms"> I agree to the <a href="#">Terms and Conditions</a><br></label>
+            <input type="checkbox" class="form-check-input" id="terms" required>
+            <label class="form-check-label ml-2" for="terms"> I agree to the <a href="#">Terms and
+                Conditions</a><br></label>
+            <div class="invalid-feedback">
+                Please agree to the Terms and Conditions.
+            </div>
         </div>
     </div>
-    <input type="submit" class="btn btn-outline-dark btn-lg" name="Submit">
+    <input id="submitBtn" type="submit" class="btn btn-light btn-lg form-submit" name="Submit">
 </form>
+
+<div class="row d-flex ml-5">
+    <div class="alert alert-success collapse" id="successMsg" style="width: 50%" role="alert">
+        Registration successful!
+    </div>
+</div>
 
 <!-- Footer -->
 
@@ -238,3 +269,28 @@
 
 </body>
 </html>
+
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        $('#alertMsg').show('fade');
+                    }
+                    if(form.checkValidity() === true){
+                        event.preventDefault();
+                        event.stopPropagation();
+                        $('#successMsg').show('fade');
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+</script>
