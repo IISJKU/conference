@@ -8,102 +8,107 @@ html, body {
     color: #111826;
 }
 
-
 /*---Media Queries --*/
 @media (max-width: 992px) {
-
+    .nav-link {
+        font-size: 22px;
+    }
 }
+
 @media (max-width: 768px) {
-
+    .nav-link {
+        font-size: 22px;
+    }
 }
+
 @media (max-width: 576px) {
-
+    .nav-link {
+        font-size: 22px;
+    }
 }
 
-.col-{
+.col- {
     padding: 0;
 }
 
-.card-img-overlay{
+.card-img-overlay {
     color: white;
     margin-bottom: 215px;
     text-shadow: 1px 1px 5px #111826;
 }
 
-.card{
+.card {
     margin: 20px;
     border-color: #576970;
     border-radius: .4rem;
 }
 
-.card-title{
+.card-title {
     font-size: 20px;
     line-height: 1.1;
 }
 
-.card-body .card-title{
+.card-body .card-title {
     font-size: 16px;
 }
 
-.card-text{
+.card-text {
     font-size: 16px;
     font-weight: lighter;
     line-height: 1.1;
 }
 
-.bottom-align-text{
+.bottom-align-text {
     position: absolute;
     bottom: -15px;
 }
 
 .crop-text-2 {
     -webkit-line-clamp: 4;
-    overflow : hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
 
-hr{
+hr {
     border-top: 1px solid #9EB1BA;
 }
 
-a{
+a {
     color: #304963;
     font-weight: bold;
     text-decoration: underline;
 }
 
-.h2{
+.h2 {
     font-size: 3.0vh;
     text-decoration: none;
 }
 
-.h2:hover{
+.h2:hover {
     text-decoration: none;
 }
 
-
-
-h3{
+h3 {
     font-size: 3.0vh;
 }
-h4{
+
+h4 {
     font-size: 2.5vh;
 }
 
-.tab button{
+.tab button {
     font-size: 2.0vh !important;
     padding: 15px 10px !important;
 }
 
-.media-body{
+.media-body {
     font-family: 'Proxima Nova Lt', sans-serif;
     font-size: 17px;
     font-weight: lighter;
     color: #111826;
 }
-
 
 #main1 {
     background-color: #F8F9FA;
@@ -122,25 +127,25 @@ h4{
     font-size: 16px;
 }
 
-#maincontent img{
+#maincontent img {
     box-shadow: 1px 1px 8px #A4B8C1;
 }
 
-#maincontentprogram{
+#maincontentprogram {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 10vw;
     padding-left: 10vw;
 }
 
-#maincontentprogram2{
+#maincontentprogram2 {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 18vw;
     padding-left: 18vw;
 }
 
-legend{
+legend {
     float: left;
     margin: 0;
     padding: 5px 15px;
@@ -148,40 +153,38 @@ legend{
     border-bottom: 1px solid #CCDCE6;
 }
 
-a:hover{
+a:hover {
     color: slategrey;
 }
-
 
 .display-4 {
     font-size: 6.0vh;
 }
 
-.skiplink{
+.skiplink {
     position: absolute;
     left: -10000px;
 }
 
 /*--- Form --*/
 
-form{
+form {
     padding: 3rem;
 }
 
-form[role="search"]{
+form[role="search"] {
     padding: 0 !important;
 }
 
-
-.form-group{
+.form-group {
     margin-bottom: 0;
 }
 
-.form-row{
+.form-row {
     padding: 0px 10px;
 }
 
-fieldset{
+fieldset {
     border: 1px solid #9EB1BA;
     border-radius: 3px;
     margin-bottom: 20px;
@@ -196,12 +199,12 @@ fieldset{
     transition: opacity ease-out 0.7s;
 }
 
-.bg-image{
+.bg-image {
     height: 32rem;
     background: #111826;
 }
 
-.overlay-image{
+.overlay-image {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -212,37 +215,39 @@ fieldset{
     opacity: 0.4;
 }
 
-
-.carousel-caption{
+.carousel-caption {
     position: absolute;
     text-align: left;
     bottom: 60px;
 }
 
-.carousel-caption h5{
+.carousel-caption h5 {
     font-size: 4vh;
     text-shadow: 2px 2px 10px #111826;
 }
 
-.carousel-caption p{
+.carousel-caption p {
     font-size: 3vh;
     text-shadow: 1px 1px 10px #111826;
 }
 
 /*-- Buttons --*/
 
-.btn{
+.btn {
     background-color: #F8F9FA;
     color: #111826;
     margin: 5px;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #304963;
     color: white;
 }
 
-.btn-primary {background-image: linear-gradient(to right, rgba(0, 149, 0, 0.89) 0%, rgba(0, 191, 18, 0.68) 51%, rgba(0, 46, 10, 0.83) 100%)}
+.btn-primary {
+    background-image: linear-gradient(to right, rgba(0, 149, 0, 0.89) 0%, rgba(0, 191, 18, 0.68) 51%, rgba(0, 46, 10, 0.83) 100%)
+}
+
 .btn-primary {
     margin: 10px;
     padding: 5px 10px;
@@ -262,8 +267,10 @@ fieldset{
     background-image: linear-gradient(to right, rgba(64, 10, 0, 0.85) 0%, rgba(106, 13, 15, 0.68) 51%, rgba(46, 1, 0, 0.83) 100%)
 }
 
+.btn-success {
+    background-image: linear-gradient(to right, rgba(8, 106, 154, 0.78) 0%, rgba(57, 191, 180, 0.68) 51%, rgba(6, 40, 57, 0.95) 100%)
+}
 
-.btn-success {background-image: linear-gradient(to right, rgba(8, 106, 154, 0.78) 0%, rgba(57, 191, 180, 0.68) 51%, rgba(6, 40, 57, 0.95) 100%)}
 .btn-success {
     margin: 10px;
     padding: 5px 10px;
@@ -283,7 +290,10 @@ fieldset{
     background-image: linear-gradient(to right, rgba(8, 54, 80, 0.89) 0%, rgba(30, 100, 89, 0.81) 51%, rgba(6, 40, 57, 0.95) 100%);
 }
 
-.btn-danger {background-image: linear-gradient(to right, rgba(229, 78, 53, 0.99) 0%, rgba(212, 98, 0, 0.85) 51%, rgba(52, 17, 14, 0.89) 100%)}
+.btn-danger {
+    background-image: linear-gradient(to right, rgba(229, 78, 53, 0.99) 0%, rgba(212, 98, 0, 0.85) 51%, rgba(52, 17, 14, 0.89) 100%)
+}
+
 .btn-danger {
     margin: 10px;
     padding: 5px 10px;
@@ -303,8 +313,10 @@ fieldset{
     background-image: linear-gradient(to right, rgba(108, 37, 28, 0.89) 0%, rgba(122, 61, 0, 0.77) 51%, rgba(52, 17, 14, 0.89) 100%);
 }
 
+.btn-warning {
+    background-image: linear-gradient(to right, rgb(97, 67, 133) 0%, rgb(81, 99, 149) 51%, #352448 100%)
+}
 
-.btn-warning {background-image: linear-gradient(to right, rgb(97, 67, 133) 0%, rgb(81, 99, 149) 51%, #352448 100%)}
 .btn-warning {
     margin: 10px;
     padding: 5px 10px;
@@ -324,8 +336,10 @@ fieldset{
     text-decoration: none;
 }
 
+.btn-light {
+    background-image: linear-gradient(to right, #dce4ea 0%, #f0f0f0 51%, #9eb1ba 100%)
+}
 
-.btn-light {background-image: linear-gradient(to right, #dce4ea 0%, #f0f0f0 51%, #9eb1ba 100%)}
 .btn-light {
     margin: 9px;
     padding: 4px 10px;
@@ -344,13 +358,13 @@ fieldset{
     background-image: linear-gradient(to right, rgba(49, 100, 133, 0.75) 0%, rgba(106, 153, 195, 0.85) 51%, #9eb1ba 100%);
 }
 
-#filter{
+#filter {
 
 }
 
 /*-- Dropdown --*/
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: rgba(248, 249, 250, 0.8);
     border: 0px;
     border-radius: 0;
@@ -358,29 +372,30 @@ fieldset{
     margin: 1.3rem;
 }
 
-.dropdown-divider{
-    margin: 0 ;
+.dropdown-divider {
+    margin: 0;
 }
 
-.dropdown-item{
+.dropdown-item {
     text-decoration: none;
     font-size: 1.4rem;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: rgba(10, 30, 55, 0.4);
 }
 
 /*-- Navigation --*/
 
-.nav-link{
+.nav-link {
     size: 1.3em !important;
     color: #111826;
     text-decoration: none;
     font-weight: normal;
     padding: 0 5px 0 5px;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: slategrey;
 }
 
@@ -391,7 +406,7 @@ fieldset{
     color: #111826;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     color: #A4B8C1;
 }
 
@@ -400,8 +415,9 @@ figure {
     position: relative;
     width: 100%;
     height: 60%;
-    margin: 0!important;
+    margin: 0 !important;
 }
+
 .fixed-wrap {
     clip: rect(0, auto, auto, 0);
     position: absolute;
@@ -410,6 +426,7 @@ figure {
     width: 100%;
     height: 100%;
 }
+
 #fixed {
 
     position: fixed;
@@ -424,6 +441,7 @@ figure {
     transform: translateZ(0);
     will-change: transform;
 }
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
@@ -432,6 +450,7 @@ figure {
 ::-webkit-input-placeholder {
     color: #9EB1BA;
 }
+
 ::-moz-placeholder {
     color: #9EB1BA;
 }
@@ -450,7 +469,8 @@ figure {
     padding: 25px;
     transition: all .5s;
 }
-.search-focus:focus{
+
+.search-focus:focus {
     width: 200px;
     padding-left: 50px;
 }
@@ -467,7 +487,8 @@ figure {
     padding: 25px;
     transition: all .5s;
 }
-.search-hover:hover{
+
+.search-hover:hover {
     width: 200px;
     padding-left: 50px;
 }
@@ -477,6 +498,7 @@ figure {
     overflow: hidden;
     height: 30px;
 }
+
 .search-click input {
     background: transparent;
     border: 1px solid #9EB1BA;
@@ -499,7 +521,6 @@ figure {
     height: 80px;
 }
 
-
 .nav-tabs button {
     display: block;
     background-color: inherit;
@@ -514,18 +535,15 @@ figure {
     font-size: 18px;
 }
 
-
 .nav-tabs button:hover {
     background-color: #F8F9FA;
     color: #111826;
 }
 
-
 .nav-tabs button.active {
     background-color: #F8F9FA;
     color: #111826;
 }
-
 
 .tabcontent {
     float: left;
@@ -539,69 +557,74 @@ figure {
 
 /*-- Table --*/
 
-thead{
+thead {
     font-size: 18px;
 }
 
-td{
+td {
     width: 24%;
 }
 
-.table-success{
+.table-success {
     background-color: #A61639;
     color: white;
     text-shadow: 1px 1px 5px #3b0b0c;
 }
-.table-danger{
+
+.table-danger {
     background-color: #268B8F;
     color: white;
     text-shadow: 1px 1px 5px #0a232d;
 }
-.table-warning{
+
+.table-warning {
     background-color: #CC6D13;
     color: white;
     text-shadow: 1px 1px 5px #741915;
 }
-.table-info{
+
+.table-info {
     background-color: #524972;
     color: white;
     text-shadow: 1px 1px 5px #1a1630;
 }
-.table-dark{
+
+.table-dark {
     background-color: #304963;
 }
 
 @media only screen and (max-width: 760px), (min-device-width: 768px), (max-device-width: 1024px) {
 
-    table, thead{
+    table, thead {
         display: block;
     }
-/*
-    thead tr{
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
 
-    tr{ border: 1px solid #A4B8C1}
+    /*
+        thead tr{
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
 
-    td{
-        border: none;
-        border-bottom: 1px solid #A4B8C1;
-        position: relative;
-        padding-left: 50%;
-    }
+        tr{ border: 1px solid #A4B8C1}
 
-    td:before{
-        position: absolute;
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-    }
+        td{
+            border: none;
+            border-bottom: 1px solid #A4B8C1;
+            position: relative;
+            padding-left: 50%;
+        }
 
-*/
+        td:before{
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+    */
 
 }
 
