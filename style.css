@@ -47,7 +47,7 @@ html, body {
 }
 
 .card {
-    margin: 20px;
+    margin: 15px;
     border-color: #576970;
     border-radius: .4rem;
 }
@@ -150,8 +150,6 @@ h4 {
 #maincontentprogram2 {
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-right: 18vw;
-    padding-left: 18vw;
 }
 
 legend {
