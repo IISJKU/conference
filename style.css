@@ -27,6 +27,36 @@ html, body {
     }
 }
 
+.fa-facebook{
+    color: #3B5998;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.fa-twitter{
+    color: #55ACEE;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.fa-linkedin{
+    color: #007bb5;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.fa-youtube{
+    color: #bb0000;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.fa-instagram{
+    color: #AB2E94;
+    font-size: 30px;
+    margin: 5px;
+}
+
 .filterDiv {
     display: none; /* Hidden by default */
 }
