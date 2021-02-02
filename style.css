@@ -25,33 +25,34 @@ html, body {
     .nav-link {
         font-size: 22px;
     }
+
 }
 
-.fa-facebook{
+.fa-facebook {
     color: #3B5998;
     font-size: 30px;
     margin: 5px;
 }
 
-.fa-twitter{
+.fa-twitter {
     color: #55ACEE;
     font-size: 30px;
     margin: 5px;
 }
 
-.fa-linkedin{
+.fa-linkedin {
     color: #007bb5;
     font-size: 30px;
     margin: 5px;
 }
 
-.fa-youtube{
+.fa-youtube {
     color: #bb0000;
     font-size: 30px;
     margin: 5px;
 }
 
-.fa-instagram{
+.fa-instagram {
     color: #AB2E94;
     font-size: 30px;
     margin: 5px;
@@ -406,7 +407,7 @@ fieldset {
     border: 0px;
     border-radius: 0;
     padding: 0;
-    margin: 1.3rem;
+    margin: 0;
 }
 
 .dropdown-divider {
@@ -416,6 +417,7 @@ fieldset {
 .dropdown-item {
     text-decoration: none;
     font-size: 1.4rem;
+    width: 100%;
 }
 
 .dropdown-item:hover {
@@ -438,13 +440,16 @@ fieldset {
         width: 80%;
         text-align: left;
     }
+
     .mobileMenu.open {
         -webkit-transform: translateX(0%);
         transform: translateX(0%);
     }
+
     .mobileMenu .navbar-nav {
         overflow-y: auto;
     }
+
     .overlay {
         position: fixed;
         top: 0;
@@ -455,41 +460,81 @@ fieldset {
         background-color: rgba(17, 24, 38, 0.6);
         display: none;
     }
+
     .overlay.open {
         display: block;
         z-index: 129;
     }
 
-    .logoSmall{
+    .logoSmall {
         height: 2.7em;
     }
-    .logoBig{
+
+    .logoBig {
         display: none;
     }
-    .navbar{
+
+    .navbar {
         padding: 0rem 1rem;
     }
-.nav-item{
-    padding-left: 0 !important;
-}
+
+    .nav-item {
+        padding-left: 0 !important;
+    }
+    .loginButton{
+        font-size: 26px;
+        border: none;
+        background-color: #F8F9FA;
+        color: #111826;
+    }
+    .bg-image {
+        display: none;
+    }
+    .usernav {
+        display: none;
+    }
+    .nav-link {
+        border-bottom: 1px solid #9EB1BA;
+    }
+    .nav-link{
+        padding: 10px !important;
+    }
+
+    .nav-item, .dropdownitem{
+        padding: 0px !important;
+    }
+    .nav-item:hover{
+        background-color: rgba(10, 30, 55, 0.4);
+    }
+    .navbar-nav{
+        width: 100%;
+    }
 }
 
 @media (min-width: 993px) {
-    .logoBig{
+    .logoBig {
         height: 5em;
     }
 
-    .logoSmall{
+    .logoSmall {
+        display: none;
+    }
+
+    .loginButton {
+        display: none;
+    }
+
+    .userNavItem{
         display: none;
     }
 }
 
-.navbar-collapse{
+.navbar-collapse {
     margin-top: 4rem;
     align-items: start;
 }
 
-.usernav{
+.usernav {
     flex-direction: row;
 }
 

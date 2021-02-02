@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Program | Icchp</title>
+    <title>Icchp</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -18,62 +18,56 @@
 
 <!-- Navigation -->
 
-<nav role="navigation" class="navbar navbar-expand-lg bg-light sticky-top justify-content-sm-start"
-     aria-label="Main Navigation">
-    <div class="container-fluid">
-        <div class="navbar-logo">
-            <a class="logo navbar-btn pull-left" href="index.html" alt="Home">
-                <img class="img-fluid" style="height: 10vh" src="Images/Logo3.png"/>
-            </a>
-        </div>
-        <div class="d-flex justify-content-end text-nowrap order-lg-1">
-            <form role="search" class="search">
-                <span class="glyphicon glyphicon-name"></span>
-                <input type="text" class="search-focus" placeholder="Search...">
-            </form>
-            <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#collapse_target"
-                    aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="sr-only">Toggle Main Navigation</span>
-            </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-sm-start sticky-top"
+     aria-label="Main navigation">
+    <a class="navbar-brand order-1 order-lg-0 ml-lg-0 m-auto" href="index.html" alt="home">
+        <img class="img-fluid logoBig" src="Images/Logo3.png" alt="Icchp Logo"/>
+        <img class="img-fluid logoSmall" src="Images/Logo1.png" alt="Icchp Logo"/>
+    </a>
+    <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        </div>
-        <div class="navbar-collapse collapse justify-content-end text-right" id="collapse_target">
+    <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-light p-5 p-lg-0 mt-lg-0 mobileMenu"
+         id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration
+                    <span class="caret position-absolute"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Conference Rates 2020</a>
 
-            <ul class="navbar-nav mt-2 mt-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration
-                        <span class="caret position-absolute"></span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Conference Rates 2020</a>
-
-                        <a class="dropdown-item" href="#">Terms & Conditions</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Overview</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="program2.html">Program</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contribute</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Award</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
+                    <a class="dropdown-item" href="#">Terms & Conditions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Overview</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="program2.html">Program</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contribute</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Award</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="program.html">Contact</a>
+            </li>
+        </ul>
+        <form role="search" class="search">
+            <span class="glyphicon glyphicon-name"></span>
+            <input type="search" class="search-focus" placeholder="Search..." aria-label="Search">
+        </form>
     </div>
 </nav>
+<div class="overlay" aria-hidden="true"></div>
 
 <!-- Image Slider -->
 

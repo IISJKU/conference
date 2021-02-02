@@ -17,63 +17,89 @@
 
 <!-- Navigation -->
 
-<nav role="navigation" class="navbar navbar-expand-lg bg-light sticky-top justify-content-sm-start"
-     aria-label="Main Navigation">
-    <div class="container-fluid">
-        <div class="navbar-logo">
-            <a class="logo navbar-btn pull-left" href="index.html" alt="Home">
-                <img class="img-fluid" style="height: 10vh" src="Images/Logo3.png"/>
-            </a>
-        </div>
-        <div class="d-flex justify-content-end text-nowrap order-lg-1">
-            <form role="search" class="search">
-                <span class="glyphicon glyphicon-name"></span>
-                <input type="text" class="search-focus" placeholder="Search...">
-            </form>
-            <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#collapse_target"
-                    aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="sr-only">Toggle Main Navigation</span>
-            </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-sm-start sticky-top"
+     aria-label="Main navigation">
+    <a class="navbar-brand order-1 order-lg-0 ml-lg-0 m-auto" href="index.html" alt="home">
+        <img class="img-fluid logoBig" src="Images/Logo3.png" alt="Icchp Logo"/>
+        <img class="img-fluid logoSmall" src="Images/Logo1.png" alt="Icchp Logo"/>
+    </a>
+    <a class="loginButton order-1" type="button" href="loggedIn.html">
+        <span class="fas fa-user-circle"></span>
+    </a>
+    <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        </div>
-        <div class="navbar-collapse collapse justify-content-end text-right" id="collapse_target">
+    <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-light p-5 p-lg-0 mt-lg-0 mobileMenu"
+         id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <h5 class="userNavItem" style="font-size: 24px; color: #111826">Main Navigation</h5>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration
+                    <span class="caret position-absolute"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Conference Rates 2020</a>
 
-            <ul class="navbar-nav mt-2 mt-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration
-                        <span class="caret position-absolute"></span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Conference Rates 2020</a>
-
-                        <a class="dropdown-item" href="#">Terms & Conditions</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Overview</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="program2.html">Program</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contribute</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Award</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="program.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+                    <a class="dropdown-item" href="#">Terms & Conditions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Overview</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="program2.html">Program</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contribute</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Award</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="program.html">Contact</a>
+            </li>
+            <br><br>
+            <h5 class="userNavItem" style="font-size: 24px; color: #111826">User Navigation</h5>
+            <li class="nav-item userNavItem">
+                <a class="nav-link" href="#">Chair</a>
+            </li>
+            <li class="nav-item userNavItem">
+                <a class="nav-link" href="#">Finance Overview</a>
+            </li>
+            <li class="nav-item userNavItem">
+                <a class="nav-link" href="#">My Reviews</a>
+            </li>
+            <li class="nav-item userNavItem">
+                <a class="nav-link" href="#">My Assessments</a>
+            </li>
+            <li class="nav-item userNavItem">
+                <a class="nav-link" href="#">My Sessions</a>
+            </li>
+            <li class="nav-item userNavItem">
+                <a class="nav-link" href="#">Event Registration</a>
+            </li>
+            <li class="nav-item userNavItem">
+                <a class="nav-link" href="#">My Contributions</a>
+            </li>
+            <li class="nav-item userNavItem">
+                <a class="nav-link" href="#">My Profile</a>
+            </li>
+            <li class="nav-item userNavItem">
+                <a class="nav-link" href="index.html">Logout</a>
+            </li>
+        </ul>
+        <form role="search" class="search">
+            <span class="glyphicon glyphicon-name"></span>
+            <input type="search" class="search-focus" placeholder="Search..." aria-label="Search">
+        </form>
     </div>
 </nav>
-
+<div class="overlay" aria-hidden="true"></div>
 
 <!-- Image Slider -->
 
@@ -138,19 +164,12 @@
 
 <!-- User Navigation -->
 
-<nav role="navigation" class="navbar navbar-expand-lg bg-light sticky-top justify-content-sm-start"
+<nav role="navigation" class="navbar navbar-expand-lg navbar-light bg-light justify-content-sm-start"
      aria-label="User Navigation">
     <div class="container-fluid d-flex justify-content-end">
-        <div class="text-nowrap order-lg-1">
-            <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#collapsetarget"
-                    aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="sr-only">Toggle User Navigation</span>
-            </button>
-        </div>
-        <div class="navbar-collapse collapse justify-content-end text-right" id="collapsetarget">
+        <div class="justify-content-end text-right" id="collapsetarget">
 
-            <ul class="navbar-nav mt-2 mt-lg-0">
+            <ul class="navbar-nav mt-2 mt-lg-0 usernav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Chair</a>
                 </li>
@@ -195,7 +214,7 @@
                  class="media-element file-media-original img-responsive" data-delta="1"
                  typeof="foaf:Image" src="https://www.icchp.org/sites/default/files/manduchi.png">
             <div class="col m-2">
-                <h2 class="">Message from our General Chair</h2>
+                <h1 class="">Message from our General Chair</h1>
                 <p>Dear friends of ICCHP,</p>
                 <p>First and foremost, we hope that you, your family and friends are staying well and managing through
                     these
@@ -230,7 +249,7 @@
         </div>
     </div>
     <div class="container-fluid padding" id="main2">
-        <h2>Welcome from the Host</h2>
+        <h1>Welcome from the Host</h1>
         <p>This is an exciting time to be working on accessibility and inclusion, and in particular on such technical
             aspects as eAccessibility and Assistive Technology. There is increasing awareness of the many unnecessary
             barriers, physical or otherwise, that impede opportunities for work, education, and participation by people
@@ -275,7 +294,6 @@
     </div>
 </div>
 
-</div>
 
 <!-- Footer -->
 
@@ -309,9 +327,30 @@
             <div class="col-md-4">
                 <h3>Text</h3>
                 <hr>
-                <img src="Images/unnamed.png" height="100"/></div>
+                <img src="Images/unnamed.png" height="100" alt="JKU Logo"/></div>
         </div>
     </div>
 </footer>
 </body>
 </html>
+
+<script>
+    $(document).ready(function() {
+        var fixHeight = function() {
+            $('.navbar-nav').css(
+                'max-height',
+                document.documentElement.clientHeight - 150
+            );
+        };
+        fixHeight();
+        $(window).resize(function() {
+            fixHeight();
+        });
+        $('.navbar .navbar-toggler').on('click', function() {
+            fixHeight();
+        });
+        $('.navbar-toggler, .overlay').on('click', function() {
+            $('.mobileMenu, .overlay').toggleClass('open');
+        });
+    });
+</script>

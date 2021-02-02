@@ -18,16 +18,21 @@
 
 <!-- Navigation -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-sm-start sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-sm-start sticky-top"
+     aria-label="Main navigation">
     <a class="navbar-brand order-1 order-lg-0 ml-lg-0 m-auto" href="index.html" alt="home">
-        <img class="img-fluid logoBig" src="Images/Logo3.png"/>
-        <img class="img-fluid logoSmall" src="Images/Logo1.png"/>
+        <img class="img-fluid logoBig" src="Images/Logo3.png" alt="Icchp Logo"/>
+        <img class="img-fluid logoSmall" src="Images/Logo1.png" alt="Icchp Logo"/>
     </a>
-    <button class="navbar-toggler align-self-center" type="button">
+    <a class="loginButton order-1" type="button" href="loggedIn.html">
+        <span class="fas fa-user-circle"></span>
+    </a>
+    <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-light p-5 p-lg-0 mt-lg-0 mobileMenu" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-light p-5 p-lg-0 mt-lg-0 mobileMenu"
+         id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -61,23 +66,29 @@
         </ul>
         <form role="search" class="search">
             <span class="glyphicon glyphicon-name"></span>
-            <input type="text" class="search-focus" placeholder="Search...">
+            <input type="search" class="search-focus" placeholder="Search..." aria-label="Search">
         </form>
     </div>
 </nav>
-<div class="overlay"></div>
-
+<div class="overlay" aria-hidden="true"></div>
 
 
 <!-- Image Slider -->
 
-<div role="slider" id="slides" class="carousel slide carousel-fade" data-ride="carousel" aria-label="Carousel">
+<div role="slider" id="slides" class="carousel slide carousel-fade" data-ride="carousel" aria-label="Carousel"
+     data-pause="hover" data-keyboard="true">
 
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
+        <li data-target="#slides" data-slide-to="0" class="active">
+            <span class="sr-only">Slide 1</span>
+        </li>
+        <li data-target="#slides" data-slide-to="1">
+            <span class="sr-only">Slide 2</span>
+        </li>
+        <li data-target="#slides" data-slide-to="2">
+            <span class="sr-only">Slide 3</span>
+        </li>
     </ol>
 
     <!-- Slides -->
@@ -132,19 +143,17 @@
 
 <!-- User Navigation -->
 
-<nav role="navigation" class="navbar navbar-expand-md bg-light"
-     aria-label="User Navigation">
+<nav role="navigation" class="navbar navbar-expand-md bg-light" aria-label="User Navigation">
     <div class="container-fluid d-flex justify-content-end">
-
-                <ul class="navbar-nav ml-auto usernav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="loggedIn.html">Log In</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Register.html">Register</a>
-                    </li>
-                </ul>
-        </div>
+        <ul class="navbar-nav ml-auto usernav">
+            <li class="nav-item">
+                <a class="nav-link" href="loggedIn.html">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Register.html">Register</a>
+            </li>
+        </ul>
+    </div>
     </div>
 </nav>
 
@@ -159,7 +168,7 @@
                  class="media-element file-media-original img-responsive" data-delta="1"
                  typeof="foaf:Image" src="https://www.icchp.org/sites/default/files/manduchi.png">
             <div class="col m-2">
-                <h2 class="">Message from our General Chair</h2>
+                <h1 class="">Message from our General Chair</h1>
                 <p>Dear friends of ICCHP,</p>
                 <p>First and foremost, we hope that you, your family and friends are staying well and managing through
                     these
@@ -194,7 +203,7 @@
         </div>
     </div>
     <div class="container-fluid padding" id="main2">
-        <h2>Welcome from the Host</h2>
+        <h1>Welcome from the Host</h1>
         <p>This is an exciting time to be working on accessibility and inclusion, and in particular on such technical
             aspects as eAccessibility and Assistive Technology. There is increasing awareness of the many unnecessary
             barriers, physical or otherwise, that impede opportunities for work, education, and participation by people
@@ -272,7 +281,7 @@
             <div class="col-md-4">
                 <h3>Text</h3>
                 <hr>
-                <img src="Images/unnamed.png" height="100"/></div>
+                <img src="Images/unnamed.png" height="100" alt="JKU Logo"/></div>
         </div>
     </div>
 </footer>
@@ -287,21 +296,21 @@
         })
     })
 
-    $(document).ready(function() {
-        var fixHeight = function() {
+    $(document).ready(function () {
+        var fixHeight = function () {
             $('.navbar-nav').css(
                 'max-height',
                 document.documentElement.clientHeight - 150
             );
         };
         fixHeight();
-        $(window).resize(function() {
+        $(window).resize(function () {
             fixHeight();
         });
-        $('.navbar .navbar-toggler').on('click', function() {
+        $('.navbar .navbar-toggler').on('click', function () {
             fixHeight();
         });
-        $('.navbar-toggler, .overlay').on('click', function() {
+        $('.navbar-toggler, .overlay').on('click', function () {
             $('.mobileMenu, .overlay').toggleClass('open');
         });
     });
