@@ -230,7 +230,18 @@ fieldset {
 
 /*-- Carousel --*/
 
-.carousel-fade .carousel-item {
+.carousel{
+    margin-top: 95px;
+}
+
+.carousel-fade {
+    height: 32rem;
+    background: #111826;
+    color: white;
+    transition: opacity ease-out 0.7s;
+}
+
+.carousel-item{
     height: 32rem;
     background: #111826;
     color: white;
@@ -269,6 +280,7 @@ fieldset {
     text-shadow: 1px 1px 10px #111826;
 }
 
+
 /*-- Buttons --*/
 
 .btn {
@@ -302,7 +314,7 @@ fieldset {
 .btn-primary:hover {
     color: #fff;
     text-decoration: none;
-    background-image: linear-gradient(to right, rgba(64, 10, 0, 0.85) 0%, rgba(106, 13, 15, 0.68) 51%, rgba(46, 1, 0, 0.83) 100%)
+    background-image: linear-gradient(to right, rgba(0, 64, 6, 0.85) 0%, rgba(23, 106, 31, 0.68) 51%, rgba(0, 46, 6, 0.83) 100%)
 }
 
 .btn-success {
@@ -426,6 +438,10 @@ fieldset {
 
 /*-- Navigation --*/
 
+.navbar{
+    box-shadow: 1px 1px 15px rgba(17, 24, 38, 0.3);
+}
+
 @media (max-width: 992px) {
     .mobileMenu {
         -webkit-transform: translateX(-100%);
@@ -533,6 +549,14 @@ fieldset {
     .userNavItem{
         display: none;
     }
+    .carousel-control-next{
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(17, 24, 38, 0.91) 70%)
+    }
+
+    .carousel-control-prev{
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(17, 24, 38, 0.9) 70%)
+    }
+
 }
 
 .navbar-collapse {
