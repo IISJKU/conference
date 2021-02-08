@@ -79,8 +79,8 @@ html, body {
 
 .card {
     margin: 15px;
-    border-color: #576970;
-    border-radius: .4rem;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(17, 24, 38, 0.31);
 }
 
 .card-title {
@@ -96,6 +96,16 @@ html, body {
     font-size: 16px;
     font-weight: lighter;
     line-height: 1.1;
+}
+
+.sessionCard{
+    text-decoration: none !important;
+    font-size: 20px !important;
+}
+
+.track{
+    font-size: 28px;
+    font-weight: lighter;
 }
 
 .bottom-align-text {
