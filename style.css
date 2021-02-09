@@ -586,6 +586,17 @@ fieldset {
     .display-4{
         font-size: 30px !important;
     }
+
+    .session{
+        margin: 0;
+        padding: 2em !important;
+    }
+    .talk{
+        margin-top: 5em;
+    }
+    .sessionDetail{
+        padding: 2em;
+    }
 }
 
 @media (min-width: 993px) {
