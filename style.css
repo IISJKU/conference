@@ -152,7 +152,6 @@ hr {
 a {
     color: #304963;
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .h1{
@@ -219,6 +218,26 @@ h4 {
 #maincontentprogram2 {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.session{
+    background-color: rgba(17, 24, 38, 0.15);
+    line-height: 1.5;
+    font-size: 15px !important;
+    margin-right: 8em;
+    margin-left: 2em;
+}
+
+.session h2{
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.sessionDetail{
+    padding-top: 5em;
+    padding-left: 5em;
+    padding-right: 10em;
 }
 
 legend {
