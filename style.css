@@ -109,7 +109,7 @@ html, body {
 
 .card:hover{
     transform: scale(1.08);
-
+    box-shadow: 2px 2px 15px rgba(17, 24, 38, 0.20);
 }
 
 .track{
@@ -347,8 +347,7 @@ fieldset {
 }
 
 .btn:hover {
-    background-color: #304963;
-    color: white;
+    box-shadow: 1px 1px 10px rgba(17, 24, 38, 0.20);
 }
 
 .btn-primary {
@@ -455,19 +454,10 @@ fieldset {
     background-size: 200% auto;
     color: #111826 !important;
     font-weight: bold;
-    border: 1px solid #9EB1BA;
+    border: 1px solid #9EB1BA !important;
     width: 80px;
 }
 
-.btn-light:hover {
-    color: #fff !important;
-    text-decoration: none;
-    background-image: linear-gradient(to right, rgba(49, 100, 133, 0.75) 0%, rgba(106, 153, 195, 0.85) 51%, #9eb1ba 100%);
-}
-
-#filter {
-
-}
 
 /*-- Dropdown --*/
 
