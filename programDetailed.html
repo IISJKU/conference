@@ -42,7 +42,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="programOverview.html">Program Overview</a>
 
-                    <a class="dropdown-item" href="program2.html">???</a>
+                    <a class="dropdown-item" href="program2.html">Program Detailed</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -78,7 +78,7 @@
 <div class="carousel slide bg-image" style="height: 25%">
     <div class="carousel-inner" style="height: 100%">
         <div class="carousel-item active" style="height: 100%">
-            <div class="overlay-image" style="background-color: #304963; height: 100%" alt="Image"></div>
+            <div class="overlay-image" style="background-color: #304963; height: 100%" alt="Program Background"></div>
             <div class="carousel-caption">
                 <h5 class="display-4">
                     User Centered Design and User Participation in Inclusive R&D
@@ -240,8 +240,6 @@
         </div>
     </div>
 </div>
-
-</body>
 <footer role="contentinfo">
     <div class="container-fluid padding">
         <div class="row text-center">
@@ -276,4 +274,35 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".skiplink").focusin(function () {
+            $(this).css("position", "static");
+        })
+        $(".skiplink").focusout(function () {
+            $(this).css("position", "absolute");
+        })
+    })
+
+    $(document).ready(function () {
+        var fixHeight = function () {
+            $('.navbar-nav').css(
+                'max-height',
+                document.documentElement.clientHeight - 150
+            );
+        };
+        fixHeight();
+        $(window).resize(function () {
+            fixHeight();
+        });
+        $('.navbar .navbar-toggler').on('click', function () {
+            fixHeight();
+        });
+        $('.navbar-toggler, .overlay').on('click', function () {
+            $('.mobileMenu, .overlay').toggleClass('open');
+        });
+    });
+</script>
+
+</body>
 </html>
